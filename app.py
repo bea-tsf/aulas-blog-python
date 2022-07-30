@@ -6,6 +6,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from sqlalchemy.exc import IntegrityError
 import os
 
+#modificação bestinha
 app = Flask("hello")
 db_url = os.environ.get("DATABASE_URL") or "sqlite:///app.db"
 app.config["SQLALCHEMY_DATABASE_URI"] = db_url.replace("postgres", "postgresql")
